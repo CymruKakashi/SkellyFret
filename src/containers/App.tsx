@@ -6,7 +6,6 @@ import {
   Route
 } from "react-router-dom";
 import HomePage from "./HomePage";
-import AboutPage from "./AboutPage";
 import routes from "../constants/routes.json";
 
 export default function App() {
@@ -15,9 +14,6 @@ export default function App() {
         <Switch>
           <Route exact path={routes.HOME}>
             <HomePage />
-          </Route>
-          <Route exact path={routes.ABOUT}>
-            <AboutPage />
           </Route>
         </Switch>
       </Router>
