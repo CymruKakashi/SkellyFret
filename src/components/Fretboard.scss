@@ -5,4 +5,68 @@
 .fret {
         border: 1pt solid;
         border-color: #2D4263;
+        text-align: center;
+}
+
+.note {
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    background-color: darkblue;
+    height: 50px;
+}
+
+.fret-number {
+    background-color: #121212;
+    text-align: center;
+}
+
+.a-note {
+    background-color: #c23a2e;
+}
+
+.a-sharp-note {
+    background-color: #c4952f;
+}
+
+.b-note {
+    background-color: #645394;
+}
+
+.c-note {
+    background-color: #99ac2e;
+}
+
+.c-sharp-note {
+    background-color: #a72495;
+}
+
+.d-note {
+    background-color: #00a68c;
+}
+
+.d-sharp-note {
+    background-color: #1da133;
+}
+
+.e-note {
+    background-color: #944743;
+}
+
+.f-note {
+    background-color: #6c4f3d;
+}
+
+.f-sharp-note {
+    background-color: #691d16;
+}
+
+.g-note {
+    background-color: #6ca0dc;
+}
+
+.g-sharp-note {
+    background-color: #24787a;
 }

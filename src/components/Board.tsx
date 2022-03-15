@@ -6,7 +6,7 @@ import Note from "./Note";
 export default function Board(props: BoardProps) {
     const fretNumbers = [...Array(props.boardSize)].map((val, fret) => {
         return (
-            <Col key={'fret'+fret}>
+            <Col key={'fret'+fret} className="fret-number">
                 {fret}
             </Col>
         );
@@ -16,7 +16,13 @@ export default function Board(props: BoardProps) {
         const cols = [...Array(props.boardSize)].map((val, fret) => {
             return (
                 <Col key={fret} className="fret">
-                    <Note tuning={props.tuning} string={string} fret={fret}/>
+                    <Note 
+                        tuning={props.tuning} 
+                        string={string} 
+                        fret={fret} 
+                        instrument={props.instrument} 
+                        naturalOnly={props.naturalOnly}
+                    />
                 </Col>
             );
         });
