@@ -1,3 +1,11 @@
+#controlPanel {
+    display: flex;
+    flex-direction: row;
+    .dropdown {
+        margin-right: 1em;
+    }
+}
+
 .fretboard {
     background-color: #222222;
 }

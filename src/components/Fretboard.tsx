@@ -33,44 +33,36 @@ export default function Fretboard() {
     <>
         <Container fluid>
             <h1>SkellyFret</h1>
-            <Container fluid>
-                <Row>
-                    <Col>
-                    { !isBass &&
-                        <Dropdown className="mb-2">
-                            <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                                Strings
-                            </Dropdown.Toggle>
-                            <Dropdown.Menu>
-                                <Dropdown.Item onClick={() => setStrings(6)}>Six</Dropdown.Item>
-                                <Dropdown.Item onClick={() => setStrings(7)}>Seven</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-                    }
-                    </Col>
-                    <Col>
-                        <Dropdown className="mb-2">
-                            <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                                Tuning
-                            </Dropdown.Toggle>
-                            <Dropdown.Menu>
-                                <Dropdown.Item onClick={() => setTuning(0)}>Standard</Dropdown.Item>
-                                <Dropdown.Item onClick={() => setTuning(2)}>Whole Step Down</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-                    </Col>
-                    <Col>
-                        <Dropdown className="mb-2">
-                            <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                                Guitar/Bass
-                            </Dropdown.Toggle>
-                            <Dropdown.Menu>
-                                <Dropdown.Item onClick={switchToGuitar}>Guitar</Dropdown.Item>
-                                <Dropdown.Item onClick={switchToBass}>Bass</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-                    </Col>
-                </Row>
+            <Container fluid id="controlPanel">
+                { !isBass &&
+                    <Dropdown className="mb-2">
+                        <Dropdown.Toggle variant="secondary">
+                            Strings
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            <Dropdown.Item onClick={() => setStrings(6)}>Six</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setStrings(7)}>Seven</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
+                }
+                <Dropdown className="mb-2">
+                    <Dropdown.Toggle variant="secondary">
+                        Tuning
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                        <Dropdown.Item onClick={() => setTuning(0)}>Standard</Dropdown.Item>
+                        <Dropdown.Item onClick={() => setTuning(2)}>Whole Step Down</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
+                <Dropdown className="mb-2">
+                    <Dropdown.Toggle variant="secondary">
+                        Guitar/Bass
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                        <Dropdown.Item onClick={switchToGuitar}>Guitar</Dropdown.Item>
+                        <Dropdown.Item onClick={switchToBass}>Bass</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
             </Container>
             <Board 
                 boardSize={boardSize} 
