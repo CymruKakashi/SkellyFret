@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/skellyfret/static/css/main.425ed3db.css",
-    "main.js": "/skellyfret/static/js/main.5ee091a2.js",
-    "index.html": "/skellyfret/index.html",
-    "main.425ed3db.css.map": "/skellyfret/static/css/main.425ed3db.css.map",
-    "main.5ee091a2.js.map": "/skellyfret/static/js/main.5ee091a2.js.map"
+    "main.css": "/static/css/main.425ed3db.css",
+    "main.js": "/static/js/main.02056ccd.js",
+    "index.html": "/index.html",
+    "main.425ed3db.css.map": "/static/css/main.425ed3db.css.map",
+    "main.02056ccd.js.map": "/static/js/main.02056ccd.js.map"
   },
   "entrypoints": [
     "static/css/main.425ed3db.css",
-    "static/js/main.5ee091a2.js"
+    "static/js/main.02056ccd.js"
   ]
 }
