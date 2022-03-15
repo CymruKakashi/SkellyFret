@@ -2,7 +2,7 @@
   "name": "skellyfret",
   "version": "1.0.0",
   "private": true,
-  "homepage": "http://cymrukakashi.github.io/skelly-fret",
+  "homepage": "https://cymrukakashi.github.io/SkellyFret",
   "dependencies": {
     "@reduxjs/toolkit": "^1.3.6",
     "@testing-library/jest-dom": "^4.2.4",
